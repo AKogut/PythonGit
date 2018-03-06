@@ -1,12 +1,14 @@
-a, b = 0, 1
-def fibI():
-    global a, b
-    while True:
-        a, b = b, a+b
-        yield a
-f = fibI()
-f.next()
-f.next()
-f.next()
-f.next()
-print(f.next())
+num = int(input("Enter number of fibonacci: "))
+
+def recur_fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return(recur_fibonacci(n-1) + recur_fibonacci(n-2))
+
+if num <= 0:
+    print("Plese enter a positive integer")
+else:
+    print("Fibonacci sequence:")
+    for i in range(num):
+        print(recur_fibonacci(i))
