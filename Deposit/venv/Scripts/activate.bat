@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=D:\Work\PythonGit\Chat Bot\venv"
+set "VIRTUAL_ENV=D:\Work\PythonGit\Deposit\venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
